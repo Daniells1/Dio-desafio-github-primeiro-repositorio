@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Documento de HTML</h1>
+    <form>
+        <label for="color">Cor</label>
+        <input type="color" id="color" name="cor">
+        <br>
+        <br>
+        <label for="date">Data Reserva</label>
+        <input type="date" name="datareserva" id="date">
+        <br>
+        <br>
+        <label for="nota">Qual a nota?</label>
+        <input type="range" namo="nota" id="nota" min="0" max="100" step="2">
+        
+        <br>
+        <br>
+        <label for="idade">Qual a idade?</label>
+        <input type="number" name="idade" id="idade" min="0" max="80" >
+        <br>
+        <br>
+        <label for="url">Qual seu site?</label>
+        <input type="url" name="site" id="url">
+        <br><br>
+        <br>
+        <br>
+        <label for="conhece">Quais linguens você conhece?</label>
+        <input list="codes" name="linguagem">
+        <datalist id="codes">
+            <option value="PHP">PHP</option>
+            <option value="JAVA">JAVA</option>
+            <option value="JAVASCRIPT">JAVASCRIPT</option>
+            <option value="PYTHON">PYTHON</option>
+            <option value="NODEJS">NODEJS</option>
+            <option value="C#">C#</option>
+
+        </datalist>
+
+
+
+        <button type="submit">Enviar</button>
+        
+    </form>
+  
+</body>
+</html>

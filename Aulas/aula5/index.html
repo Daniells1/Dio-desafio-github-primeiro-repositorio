@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+   <!--
+       form-tag para formulário
+       E - tag principal do formulário
+       action - para onde os dados serão enviados
+       method--
+       get -- enviar os parâmetros do formulário por URL
+       POST -- ENVIAR OS PARÂMETROS DO FORMULÁRIO PELO HEAD DA REQUISIÇÃO
+   --> 
+   <form method="get">
+       <!-- input representa campos de um formulário
+        name--- é como o arquivo no servidor vai resgatar o valor digitado pelo usuário
+        neste campo
+    -->
+    <input type="text" name="nome">
+    Informe seu nome:
+       <!--
+           type = submit ,botão para emular os dados no formulário
+           value -- texto do botãao.
+       -->
+       <input type="submit" value="Enviar os Dados">
+</form>
+</body>
+</html>

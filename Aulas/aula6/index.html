@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    <br>
+    <br>
+    Inserir nome: <br>
+    <input type="text">
+    <br>
+    <br>  
+    Idade:<br>
+    <input type="number">
+    <br>
+    <br>
+    E-Mail: <br>
+    <input type="email">
+    <br>
+    <br>
+    <select >
+        <option value="PE">PE</option>
+        <option value="RJ">RJ</option>
+        <option value="SP">SP</option>
+        <option value="TO">TO</option>
+        <option value="SE">SE</option>
+        <option value="CE">CE</option>
+        <option value="BA">BA</option>
+        <option value="AM">AM</option>
+        <option value="ES">ES</option>
+
+    </select>
+
+    <br>
+    <br>
+   Sexo:
+
+    <input type="radio" name="sexo" value = "M" id="masc"><label for="masc">Masculino</label>
+     <input type="radio" name="sexo" value = "F" id="fem"><label for="fem">Feminino</label>
+     
+     <!--
+         radio cria uma opção de campo de marção circular
+         value é o nome que aparece ao lado ou dentro do campo no caso do submit
+         id - é utilizado para chamar algum componente
+         label - sozinho não serve para nada,mas com o for pode ser usado para incluir o nome do conteúdo
+         para afete o botão do radio.
+         for- chama id
+     -->
+     <br>
+     <br>
+Onde você conheceu o site?:
+<br>
+<br>
+
+<input type="checkbox" name="conheceu" value = "Google" id="google"><label for="google">Google</label> <br>
+<input type="checkbox" name="conheceu" value = "TV" id="tv"><label for="tv">Televisão</label> <br>
+<input type="checkbox" name="conheceu" value = "Amigos" id="amigos"><label for="amigos">Amigos</label> <br>
+<input type="checkbox" name="conheceu" value = "Familia" id="familia"><label for="familia">Família</label><br><br>
+<input type="submit" value = "Entregar">
+</body>
+</html>
