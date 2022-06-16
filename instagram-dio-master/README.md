@@ -1,4 +1,4 @@
-#Projeto de interface do Instagram da Dio 📷
+#Projeto da Dio:interface do Instagram 📷
 
 Desafio:Fazer a interface de login do Instagram! 
 
