@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        /*
+        input:not inclui a formatação para todos exceto os inputs com o type = submit
+        */
+        input:not([type="submit"]){
+            background: #FFF;
+            border: 2px solid #900;
+            padding: 10px 20px; 
+            width: 300px;
+            margin:5px 0 10px;
+             color:#900;/*
+             Cor do texto*/
+             display: block;
+             border-radius: 15px;
+             /*Cantos arrendondados*/
+             outline: none;
+
+        }
+         /*
+        :focus inclui a formatação quando clicado.
+        */
+        input:not([type="submit"]):focus{
+            border: 3px dashed #000;
+        }
+        input[type="submit"]{
+           padding:20px;
+           min-width: 150px;
+           background-color: #900;
+           color:#FFF;
+           border: none;
+           outline: none;
+          
+
+        }
+        input[type="submit"]:focus{
+            background-color: #600;
+        }
+          /*
+        :hover inclui a formatação quando passa o mouse em cima.
+        */
+        input[type="submit"]:hover{
+            background-color: #B00;
+
+        }
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+            
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+            <div>
+                <label for="tel">Telefone</label>
+                <input type="tel" id="telefone">
+
+            </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

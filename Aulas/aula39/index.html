@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #elemento,#elemento2{
+        width:200px;
+        height:40px;
+        padding:15px;
+        background-color:#3d88AA;
+        color:#FFF;
+        -webkit-transition:background-color 3s,width 3s ;
+      transition: background-color 3s,width 3s  ;
+
+    }
+    .anim1{
+        -webkit-transition-timing-function:ease;
+        transition-timing-function: ease;/*começa rápido e vai desacelerando*/
+       
+    }
+    .anim2{
+        -webkit-transition-timing-function:ease;
+        transition-timing-function: linear;/*mesma velocidade durante todo trecho*/
+       
+       
+    }
+    .anim3{
+        -webkit-transition-timing-function:ease;
+        transition-timing-function: ease-in;/*começa rápido e depois mantém uma velocidade*/
+       
+    }
+    .anim4{
+        -webkit-transition-timing-function:ease;
+        transition-timing-function: ease-out;/*começa rápido e desacelara no fim */
+       
+    }
+    .anim5{
+        -webkit-transition-timing-function:ease;
+        transition-timing-function: ease-in-out;/*começa rápido e desacelara no meio*/
+       
+    }
+    .anim6{
+        -webkit-transition-timing-function:cubic-bezier(0.4,2,0.5,1);
+        transition-timing-function: cubic-bezier(0.4,2,0.5,1);/*gerenciando a velocidade de transição*/
+       
+       
+    }
+  #elemento2{
+        -webkit-transition:background-color 3s,width 3s,-webkit-transform 2s;
+        transition: background-color 3s,width 3s,transform 2s,height 3s;
+    }
+    .anim8{
+        -webkit-transition-timing-function:ease;
+        transition-timing-function: ease;
+       
+    }
+    
+    #elemento:hover{
+        width:800px;
+        background-color: #185f33;
+        
+    }
+    #elemento2:hover{
+        width:800px;
+        height: 300px;
+        background-color: #185f33;
+        -webkit-transform:  rotate(180deg);
+        transform: rotate(180deg);
+    }
+</style>
+</head>
+<body>
+   <p id="elemento" class="amin1">Animação</p> 
+   <p id="elemento" class="amin2">Animação</p>
+   <p id="elemento" class="amin3">Animação</p> 
+   <p id="elemento" class="amin4">Animação</p>
+   <p id="elemento" class="amin5">Animação</p>
+   <p id="elemento" class="amin6">Animação</p> 
+   <p id="elemento2" class="amin7">Animação</p>  
+   <p id="elemento" class="amin8">Animação</p>   
+
+</body>
+</html>

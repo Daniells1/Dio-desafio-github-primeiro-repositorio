@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 300px;
+            float: left;
+            margin-right: 20px;
+            height: 200px;
+            border:1px solid #000;
+        }
+        #grad1{
+            background: red;
+            background: -webkit-linear-gradient(#9933ff,#009932);/*safari*/
+            background: -moz-linear-gradient(#9933ff,#009932);/*morzilla*/
+            background: -o-linear-gradient(#9933ff,#009932);/*opera*/
+            background: linear-gradient(#9933ff,#009932);
+        }
+        #grad2{
+            background: red;
+            background: -webkit-linear-gradient(right,#9933ff,#009932);/*safari*/
+            background: -moz-linear-gradient(right,#9933ff,#009932);/*morzilla*/
+            background: -o-linear-gradient(right,#9933ff,#009932);/*opera*/
+            background: linear-gradient(to right, #9933ff,#009932);
+        }
+        #grad3{
+            background: red;
+            background: -webkit-linear-gradient(bottom right,#9933ff,#009932);/*safari*/
+            background: -moz-linear-gradient(bottom right,#9933ff,#009932);/*morzilla*/
+            background: -o-linear-gradient(bottom right,#9933ff,#009932);/*opera*/
+            background: linear-gradient(to bottom right, #9933ff,#009932);
+        }
+        #grad4{
+            background: red;
+            background: -webkit-linear-gradient(bottom right,#9933ff,#009932);/*safari*/
+            background: -moz-linear-gradient(bottom right,#9933ff,#009932);/*morzilla*/
+            background: -o-linear-gradient(bottom right,#9933ff,#009932);/*opera*/
+            background: linear-gradient(-90deg, #9933ff,#009932);
+        }
+        #grad5{
+            background: red;
+            background: -webkit-linear-gradient(#9933ff,#009932,#000);/*safari*/
+            background: -moz-linear-gradient(#9933ff,#009932,#000);/*morzilla*/
+            background: -o-linear-gradient(#9933ff,#009932,#000);/*opera*/
+            background: linear-gradient(#9933ff,#009932,#000);
+        }
+        #grad6{
+            background: red;
+            background: -webkit-linear-gradient(#9933ff,#009932,#000,#900);/*safari*/
+            background: -moz-linear-gradient(#9933ff,#009932,#000,#900);/*morzilla*/
+            background: -o-linear-gradient(#9933ff,#009932,#000,#900);/*opera*/
+            background: linear-gradient(#9933ff,#009932,#000,#900);
+
+        }
+        #grad7{
+            background: red;
+            background: -webkit-radial-gradient(#9933ff,#009932);/*safari*/
+            background: -moz-radial-gradient(#9933ff,#009932);/*morzilla*/
+            background: -o-radial-gradient(#9933ff,#009932);/*opera*/
+            background: radial-gradient( #9933ff,#009932);
+        }
+        #grad8{
+            background: red;
+            background: -webkit-radial-gradient(#9933ff,#009932,#000,#900);/*safari*/
+            background: -moz-radial-gradient(#9933ff,#009932,#000,#900);/*morzilla*/
+            background: -o-radial-gradient(#9933ff,#009932,#000,#900);/*opera*/
+            background: radial-gradient(#9933ff,#009932,#000,#900);
+        }
+
+    </style>
+</head>
+<body>
+    <p id="grad1"></p>
+    <p id="grad2"></p>
+    <p id="grad3"></p>
+    <p id="grad4"></p>
+    <p id="grad5"></p>
+    <p id="grad6"></p>
+    <p id="grad7"></p>
+    <p id="grad8"></p>
+
+</body>
+</html>

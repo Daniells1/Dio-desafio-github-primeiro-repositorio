@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Posicionamento</title>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .header{
+        background-color: #F1F1F1;
+        padding:30px;
+        text-align:center;
+        font-size:35px;
+    }
+    .column{
+        float: left;
+        width:33.33%;
+        padding:10px;
+        min-height:300px;
+
+    }
+    .linha::after{
+     content: "";
+     clear:both;
+     display:table;
+    }
+   /* .linha::before{
+     content: "inicio DO MAIN"
+    }
+    */
+    .footer{
+        background-color:#000000;
+        color: #FFF;
+        padding: 10px;
+
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+          <h2>CABEÇALHO</h2>
+
+    </header>
+    <main class="linha">
+       
+        <section class="column" style="background-color: #FF0000;">COLUNA 1</section>
+        <section class="column" style="background-color: #FF00FF;">COLUNA 2</section>
+        <section class="column" style="background-color: #FFFF00;">COLUNA 3</section>
+    </main>
+    <footer class="footer">
+    <p>RODAPÉ</p>    
+    </footer>
+</body>
+</html>

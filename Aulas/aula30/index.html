@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            border-radius: 50%;
+        }
+        #img2{
+             border:1px solid #000;
+             border-radius: 5px;
+            padding:15px;
+            width: 150px;
+            box-shadow: 0 0 2px 1px rgba(0, 140, 190, 0.5);
+        
+        }
+        #img2:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 190, 0.5);/*posicionamento x,posicionamento y,blur-quanto vai expandir,espessura do shadow box,cor(botei rgba para poder mexer na opacidade)
+            */
+        }
+        #img3{
+            max-width: 100%;
+            height: auto;
+        }
+        .foto{
+            position:relative;
+            width:500px;
+            height: 300px;
+        }
+        .foto img{
+            width: 100%;
+            height: auto;
+
+        }
+        .foto .descricao{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+    </style>
+</head>
+<body>
+  <!--  <img src="D:\Área de Trabalho\PRATICANDO\aula30\Praia-Vermelha_Zarpo.jpg"  widht="700" height alt="300" id="img1">
+    <br>
+    <br>
+   
+    <img src="D:\Área de Trabalho\PRATICANDO\aula30\Praia-Vermelha_Zarpo.jpg"  id="img2">
+    <br>
+    <br>
+  -->
+  <div class="foto">
+    <img src="D:\Área de Trabalho\PRATICANDO\aula30\Praia-Vermelha_Zarpo.jpg" width="1000" height="300" id="img3">
+
+ <div class="descricao">Praia do Litoral</div>
+</div>
+</body>
+</html>

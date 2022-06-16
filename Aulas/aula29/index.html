@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            margin:0 50px;
+            background-color: #F3F3F3;
+            font-size:16px;
+        }
+      .header{
+          padding:30px;
+          text-align:center;
+          background-color: #FFF;
+          float:left;
+          width:100%;
+      }
+      .header h1{
+          font-size: 3em;
+      }
+      .menu{
+          float:left;
+          width:100%;
+          background-color: #222;
+      }
+      .menu a{
+          color: #FFF;
+          float: left;
+          padding: 20px;
+          text-decoration: none;
+
+
+      }
+      .menu a.subnivel{
+       float:right;
+      }
+      .menu a:hover{
+          color:#222;
+          background-color:#F3F3F3
+      }   
+      .container::after{
+          content: "";
+          clear:both;
+          display:table;
+      }
+      .leftcolumn{
+          float:left;
+          width: 75%;
+      } 
+      .rightcolumn{
+          float:right;
+          width: 25%;
+          padding:15px;
+      }
+      .footer{
+          float:left;
+          padding:20px;
+          background-color:#DDD ;
+          text-align: center;
+          width:100%;
+
+      }
+      .card .imagemnoticia{
+          width: 100%;
+      }
+      .card{
+          padding: 10px;
+          background-color: #FFF;
+          margin-bottom: 15px;
+      }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>MEU SITE</h1>
+        <p>Site de exemplo para posicionamento</p>
+    </header>
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Contato</a>
+        <a href="#" class="subnivel">Logar</a>
+      
+    </nav>
+    <main class="container">
+        <section class="leftcolumn">
+        <div class="card">
+            <h2>Notícia Urgente</h2>
+            <img src="https://via.placeholder.com/400x120" class="imagemnoticia" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magnam veniam soluta inventore iure alias facere accusantium numquam repudiandae,
+                 molestias, corporis dolorum quasi, quae quo cum nobis facilis dolor autem praesentium.</p>
+               
+                    </div>
+                    <div class="card">
+                    <h2>Notícia Urgente</h2>
+                    <img src="https://via.placeholder.com/400x120" class="imagemnoticia" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Magnam veniam soluta inventore iure alias facere accusantium numquam repudiandae,
+                         molestias, corporis dolorum quasi, quae quo cum nobis facilis dolor autem praesentium.</p>      
+                       </div>
+        </section>
+        <aside class="rightcolumn">
+            <div class="card">
+                <h2>Feed de notícias</h2>
+                <img src="https://via.placeholder.com/100x50" class="imagemnoticia"  alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ullam, aliquam? Cumque in fugit eligendi laudantium et minima saepe iste! Nam,
+                      accusamus velit quos praesentium reiciendis dolor laudantium hic laboriosam eum.</p>
+                     
+                      <img src="https://via.placeholder.com/100x50" class="imagemnoticia"  alt="">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Ullam, aliquam? Cumque in fugit eligendi laudantium et minima saepe iste! Nam,
+                            accusamus velit quos praesentium reiciendis dolor laudantium hic laboriosam eum.</p>
+                           
+                            <img src="https://via.placeholder.com/100x50" class="imagemnoticia"  alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Ullam, aliquam? Cumque in fugit eligendi laudantium et minima saepe iste! Nam,
+                                  accusamus velit quos praesentium reiciendis dolor laudantium hic laboriosam eum.</p>
+
+            </div>
+
+            
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>RODAPÉ</p>
+    </footer>
+    
+</body>
+</html>
