@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            border: none;
+            padding: 9px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor:pointer;
+        }
+        .btn-primary{
+            background-color: rgb(17,21,255);
+            color:#FFF;
+
+        }
+        .btn-lg{
+            padding: 12px 22px;
+            font-size: 20px;
+        }
+        .btn-animate{
+            width:200px;
+        }
+        .btn-animate span{
+            position: relative;
+        }
+        .btn-animate span::after{
+            content: '>>';
+            position: absolute;
+          
+            top:0;
+            right: -40px;;
+            opacity: 0;/*escondido*/
+            transition: 1s;
+        }
+        .btn-animate:hover{
+            padding-right: 30px;
+        }
+        .btn-animate:hover span:after{
+         opacity: 1;/*aparece*/
+         right: 0;
+        }
+    </style>
+</head>
+<body>
+    <bottom class="btn btn-primary btn-lg btn-animate"><span>Entrar</span></bottom>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+
+        display: flex;
+        border:1px solid rgb(209, 3, 3);
+        
+    }
+    .container div{
+        padding: 20px;
+        border:1px solid #000;
+
+    }
+</style>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <!--
+                FLEX-GROW:1+1+5+1+1=9
+            -->
+            <div style="flex-grow: 1;">1</div>
+            <div style="flex-grow: 1;">2</div>
+            <div style="flex-grow: 5;">3</div>
+            <div style="flex-grow: 1;">4</div>
+            <div style="flex-grow: 1;">5</div>
+        </div>
+        <div class="container">
+            <!--
+                FLEX-GROW:1+1+5+1+1=9
+            -->
+            <div style="flex-grow: 1;">1</div>
+            <div style="flex-grow: 6;">2</div>
+            <div style="flex-grow: 1;">3</div>
+           
+        </div>
+</body>
+</html>

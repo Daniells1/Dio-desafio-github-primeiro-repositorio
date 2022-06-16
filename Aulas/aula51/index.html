@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+
+        display: flex;
+         border:1px solid #000;
+         width: 800px;
+        }
+        .container div{
+            flex-grow: 1;
+            padding: 20px;
+            border: 1px solid #F00;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <!--
+                acrescenta um valor em relação a divisão igualitária,
+                pode-se usar as 3 propriedas ao msm tempo
+            -->    
+        <div >1</div>
+        <div >2</div>
+        <div style="flex-basis: 200px">3</div>
+        <div style="flex: 3 0 auto">4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

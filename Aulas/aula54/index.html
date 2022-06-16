@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            width: 100vw;
+            min-height: 100vh;
+            margin:0;
+        }
+    .container > *{
+        padding: 20px;
+    }
+    header{
+        background-color: aquamarine;
+        min-height: 15vh;
+    }
+    .main-nav{
+        background-color: #FFD54F;
+       color:#000;
+       padding: 1rem;
+       padding: 1rem 0;
+
+
+    } 
+    .main-nav ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .main-nav ul li{
+        margin-right: 1rem;
+    }
+    .main-nav a{
+        text-decoration: none;
+        color:#000;
+        padding: 1rem ;
+
+    }
+    .main-nav a:hover{
+        text-decoration: none;
+      color: #FFD54F;
+      background-color: #000;
+        
+    }
+    main{
+        display: flex;
+        height: 100%;
+        padding: 0 important;
+    } 
+    main section{
+        flex: 5;
+        background-color: aqua;
+    }
+    main aside{
+        flex: 1;
+        background-color: cornflowerblue;
+    }
+    footer{
+        background-color: blueviolet;
+        height: 12vh;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="header">TOPO</header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">LINE</a></li>
+            <li><a href="">LINE</a></li>
+            <li><a href="">LINE</a></li>
+            <li><a href="">LINE</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <section>
+            CONTEUDO
+        </section>
+            <aside>FEED-INFORMAÇÕES</aside>
+        
+        
+    </main>
+    <footer>RODAPÉ</footer>
+</div>
+</body>
+</html>

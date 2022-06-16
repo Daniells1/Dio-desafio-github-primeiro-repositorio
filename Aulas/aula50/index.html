@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+
+        display: flex;
+         border:1px solid rgb(209, 3, 3);
+         width: 800px;
+        }
+        .container div{
+            flex-grow: 1;
+            padding: 20px;
+            border: 1px solid #F00;
+           width: 200px;
+
+        }
+    </style>
+</head>
+<!--
+    container - 800px
+    5 vezes 200 = 1000
+    display flex tiraria 40px de cada div,o fle-shrink faria que a div perder mais vezes em relação as outras
+-->
+<body>
+    
+            <div class="container">
+                
+                <div >1</div>
+                <div >2</div>
+                <div style="flex-shrink: 3">3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+</body>
+</html>

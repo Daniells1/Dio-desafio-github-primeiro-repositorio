@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            margin: 0;
+
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        .content >*{
+            padding: 20px;
+        }
+        .header{
+            background-color: aqua;
+            flex:1;
+            flex-basis: 100%;
+        }
+        .footer{
+            background-color: chartreuse;
+            flex:1;
+            flex-basis:100%;
+            order:4;
+
+        }
+        .main{
+            background-color: chocolate;
+            flex:4;
+            order:2;
+            min-height: 400px;
+
+        }
+        .noticiais{
+            flex:1;
+            background-color: cornflowerblue;
+            order:3;
+        }
+       .menu{
+           flex:1;
+           order:1;
+           background-color:blueviolet;
+           
+       }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <hearder class="header">
+            HEADER
+        </hearder>
+        <section class="main">
+           <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, fugiat nam! Inventore sed cupiditate in dicta rerum odio nostrum officia, eligendi dolorem est voluptatibus voluptatem? Nemo autem eveniet nam rerum?</p>
+        </section>
+        <nav class="menu">MENU</nav>
+        <aside class="noticias">NOTÍCIAS</aside>
+        <footer class="footer">RODAPÉ</footer>
+    </div>
+    
+</body>
+</html>
