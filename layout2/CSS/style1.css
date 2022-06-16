@@ -1,0 +1,187 @@
+@import url('reset1.css');
+/*Adicionar formatação geral do projeto site
+*/
+*{
+ box-sizing:border-box ;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(140,140,140);
+    line-height: 25px;
+
+}
+#header{
+    background: black no-repeat fixed center;
+    background-size: cover;
+    color:#FFF;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    padding-top: 30px;
+
+}
+nav ul, nav ul li{
+    list-style: none;
+    margin: 0;
+}
+.menu{
+    float: right;
+    padding: 20px;
+}
+.logo{
+    float: left;
+    padding: 20px;
+
+}
+.logo img{
+    height: 75px;/*se preocupar em pegar uma imagem menor caso*/
+
+}
+#header nav ul ,#header nav ul li{
+    display: inline;
+}
+#header nav a{
+ 
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+header nav a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    transition: easy 1s all;
+}
+header h1{
+    font-size: 4rem;
+    position: absolute;
+    
+}
+header .title{
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate: (-50%, -50%);
+    text-align: center;
+
+}
+.btn{
+    background-color: rgb(52, 102, 153);
+    color:#FFF;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: ease .5s all;
+    border:none;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgb(52, 75, 153);
+}
+.row::before, .row::after{
+    content: "";
+    display: table;/*ignora a formatação de float*/
+
+}
+#header nav a:hover ,#header nav a.active{
+    background-color: rgba(52, 102, 153, 0.7);
+}
+.row::after{
+    clear: both;
+}
+
+.site-session{
+    padding: 30px 0;
+    text-align: center;
+
+}
+.site-session .col{
+    float: left;
+    padding: 0 10px;
+
+}
+#work.site-session .col{
+    width: calc(100%/ 3);
+}
+.site-session h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 12px 0px;
+}
+.site-session h2::after{
+    content:"";
+    display: block;
+    background-color: rgb(130,130,130);
+    width: 50px;
+    height: 2px;
+    margin: 5px auto 0;
+}
+.subtitle{
+    margin-bottom:50px ;
+}
+#work .btn{
+    margin-top: 10px;
+}
+#client.site-session{
+    background-color: rgb(230,230,230) ;
+
+}
+#client.site-session .col{
+    width: calc(100% /4);
+
+}
+#equip.site-session .col{
+    width: calc(100% /5);
+    text-align: center;
+
+}
+#equip .image-box-round{
+    width: 120px;
+    height: 110px;
+    border-radius: 100%;
+    overflow: hidden;/*esconde o excesso da imagem*/
+    display: inline-block;
+    border-color:aquamarine ;
+    border:1px solid #000;
+
+
+}
+#equip .image-box-round img{
+    width: 100%;
+    height: 100%;
+
+}
+#footer{
+    background-color: rgb(50,50,50);
+    text-align: center;
+    padding: 10px 30px;
+}
+#footer.col{
+    width: cal(100% /3);
+
+}
+#footer, #footer a{
+    color: #FFF;
+    text-decoration: none;
+  
+
+}
+#footer .social{
+    display: inline;
+    padding: 0 0 0 15px;
+    opacity: 1;
+    font-size: 30px;
+    
+}
+#footer .social a:hover{
+    opacity: 0.5;
+    transition: ease .5s all;
+}
+#footer .menu{
+    float: none;
+}

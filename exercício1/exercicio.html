@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="D:\Área de Trabalho\PRATICANDO\exercício1\css\normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* declarando variável */
+        :root{
+            --cor-primary:#008b8b;
+            --white:#FFF;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .clear {clear:both;}
+        #menu, #topo, #conteudo, #oportunidades{
+            float:left;
+            width:100%;
+        }
+        #menu img{
+            float: left;
+        }
+        #menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0.7rem 0;
+            border:none;
+        }
+        #menu ul li{
+            display: inline;
+        }
+        #menu a{
+            color:#008b8b;
+            text-decoration: none;
+            padding: 0.7rem;
+        }
+        #menu a:hover
+        {
+            background-color:#008b8b;
+            color:#FFF;
+        }
+        #topo{
+            height:200px;
+            background-color:#008b8b;
+        }
+        #topo div{
+           position:relative;
+           top:calc(50% - 0.7rem);
+           text-align: center;
+        }
+        #topo a{
+            padding: 0.7rem;
+            background-color: #FFF;
+            color:#008b8b;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        #topo a:hover{
+            background-color:#3ed6d6; ;
+            color: #fff;
+        }
+        #conteudo{
+            color: var(--cor-primary);
+            text-align: right;
+            background-image: url('./img/imagem.jpg');
+            background-size: 450px;
+            min-height: 200px;
+            background-repeat: no-repeat;
+        }
+        #conteudo p{
+            width:60%;
+            text-transform: uppercase;
+            float: right;
+            margin: 15px 30px 15px 0 ; /*top - right- bottom-left*/
+        }
+     #oportunidades h2{
+         text-align: center;
+         font-size: 2rem;
+     }
+     .cardoportunidade{
+         /*lembrar de espaçar - ao usar calc*/
+         width: calc(33% - 30px);/*- 30px pois eu dei margem 15 para direita e 15 para esquerda totalizando 30*/
+         float: left;
+         margin:0 15px; /*0 top e bottom 15 ,right-left*/
+         padding: 10px 10px 20px;
+         text-align: center;
+         min-height: 80px;
+         background-color: var(--cor-primary);
+         color: var(--white);
+         border-radius: 15px;
+         margin-bottom:200px;
+        }
+     #rodape
+     {
+         width: 100%;
+         position: fixed; /*fixa a posição na tela*/
+         left:0;
+         bottom:0;
+         padding: 20px 0;
+         background-color: #DDD;
+     }
+     #rodape #logo
+     {
+         float: left;
+         margin-left: 20px;
+     }
+     #rodape #midias{
+        float: right;
+        margin-right: 20px;
+
+     }
+     #midias i{
+
+        color:var(--cor-primary);
+        font-size: 1.5rem;
+
+     }
+    </style>
+</head>
+<body>
+    <nav id="menu">
+        <img src="./img/png-transparent-logo-cross-red-hospital-medical-office-blue-logo-color.png" alt="Logo do sistema" height="40">
+        <ul>
+        <li>
+            <a href="#">Institucional</a>
+        </li>
+        <li>
+            <a href="#">Para Candidatos</a>
+        </li>
+        <li>
+            <a href="#">Para Empresas</a>
+        </li>
+    </ul>
+    </nav>
+    <header id="topo">
+     <div>
+         <a href="#">ENTRAR</a>
+         <a href="#">CADASTRAR-SE</a>
+
+     </div>
+    </header>
+    <section id="conteudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum dolores odio, voluptatem molestias soluta est autem nam rem aliquam molestiae, omnis officia quod, ex magnam repellendus aut explicabo maxime?</p>
+    </section>
+        <aside id="oportunidades">
+            <h2>
+                Oportunidade da sua Carreira
+            </h2>
+            <div class="cardoportunidade">
+                <h3>Baixe o App</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsa, molestiae impedit tempora cupiditate assumenda eveniet aliquam temporibus unde. Perspiciatis dolores ex, laudantium nulla provident numquam tenetur fugiat omnis dolore.
+
+            </div>
+            <div class="cardoportunidade">
+                <h3>Dicas de Carreira</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta dicta inventore vel modi, magnam rem maxime, nam at rerum, odit incidunt sequi voluptatum odio accusamus ratione. Laboriosam, cum neque?
+
+            </div>
+            <div class="cardoportunidade">
+                <h3>As Melhores Vagas</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita ab neque quibusdam assumenda atque perferendis repellendus blanditiis? Itaque, repellendus aut magnam quae atque quibusdam perferendis vitae debitis non aliquam.
+
+            </div>
+        </aside>
+<footer id="rodape">
+    <div id="logo">
+       SUAVAGAAQUI.COM
+
+    </div>
+    <div id="midias">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</footer>
+    
+</body>
+</html>

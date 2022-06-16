@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            max-width: 1024px;
+        }
+        .produtos{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+            grid-auto-flow: dense;
+
+            grid-gap:10px;
+
+        }
+        .produto{
+            border:1px solid blueviolet;
+            border-radius: 10px;
+            display: flex;
+
+        }
+        .destaque{
+            grid-column: auto /span 2;
+        }
+        .produto figure{
+            margin: 0;
+        }
+        .produto img{
+            width: 100%;
+            height: auto;
+        }
+        .produto header{
+            background-color: blueviolet;
+            color: white;
+            border-bottom: 1px solid black;
+            border-top-left-radius:10px ;
+            border-top-right-radius:10px ;
+        }
+        .produto header >h1{
+            text-align: center;
+            margin:0;
+            font-size:1.2rem;
+        }
+        .produto p{
+            margin: 15px 15px;
+        }
+        .produto > footer{
+            margin-top:auto ;
+        }
+        .produto footer > a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="produtos">
+            <article class="produto1">
+                <Header><h1>Produto 1</h1></Header>
+                <figure>
+                    <img src="imagens/imagem1.jpg" alt="">
+                </figure>
+                <p> Descrição do produto...</p>
+                <footer>
+                    <a href="">Comprar</a>
+                </footer>
+            </article>
+            <article class="produto2">
+                <Header><h1>Produto 2</h1></Header>
+                <figure>
+                    <img src="imagens/imagem2.jpg" alt="">
+                </figure>
+                <p> Descrição do produto...</p>
+                <footer>
+                    <a href="">Comprar</a>
+                </footer>
+            </article>
+            <article class="produto3 destaque">
+                <Header><h1>Produto 3</h1></Header>
+                <figure>
+                    <img src="imagens/imagem3.jpg" alt="">
+                </figure>
+                <p> Descrição do produto...</p>
+                <footer>
+                    <a href="">Comprar</a>
+                </footer>
+
+            </article>
+            <article class="produto4">
+                <Header><h1>Produto 4</h1></Header>
+                <figure>
+                    <img src="imagens/imagem4.jpg" alt="">
+                </figure>
+                <p> Descrição do produto...</p>
+                <footer>
+                    <a href="">Comprar</a>
+                </footer>
+            </article>
+            <article class="produto5">
+                <Header><h1>Produto 5</h1></Header>
+                <figure>
+                    <img src="imagens/imagem5.jpg" alt="">
+                </figure>
+                <p> Descrição do produto...</p>
+                <footer>
+                    <a href="">Comprar</a>
+                </footer>
+            </article>
+            <article class="produto6">
+                <Header><h1>Produto 6</h1></Header>
+                <figure>
+                    <img src="imagens/imagem6.jpg" alt="">
+                </figure>
+                <p> Descrição do produto...</p>
+                <footer>
+                    <a href="">Comprar</a>
+                </footer>
+            </article>
+            
+        </section>
+    </div>
+</body>
+</html>

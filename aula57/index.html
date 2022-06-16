@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        video{
+            width: 100vw;
+            height: 100vh;
+            top:0;
+            left:0%;
+            position: fixed;
+            object-fit: cover;
+            object-position: center;
+
+        }
+        header{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            opacity: 0;
+            color: white;
+            animation: fadeTitulo 10s ease infinite;
+        }
+        @keyframes fadeTitulo{
+            0%{opacity: 0;}
+            30%{opacity: 1;}
+            70%{opacity: 1;}
+            100%{opacity: 0;}
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <video src="../aula57/video/cidade.mp4" id="meuVideo" autoplay  loop></video>
+    <header>
+        <h1>A cidade do Futuro!</h1>
+    </header>
+</body>
+</html>

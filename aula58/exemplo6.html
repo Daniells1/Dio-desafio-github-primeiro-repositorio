@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: grid;
+        grid-template-columns: 700px 150px;
+        grid-template-rows: 100px 75px 400px 60px;
+        grid-gap:10px;
+
+    }
+    .topo{
+        background-color: tomato;
+        grid-column: 1/3;
+        grid-row:1/2;
+
+
+    }
+    .menu{
+        background-color: #ff0;
+        /*grid-area:linha inicio / coluna inicio / linha fim / coluna fim*/
+        grid-area: 2 / 1 / 3 / 3;
+
+    }
+    .principal{
+        background-color: #f08;
+
+
+    }
+    .noticias{
+        background-color: #008;
+
+    }
+    .rodape{
+        background-color: #f00;
+        grid-area: 4 / 1 / 5 / 3;
+
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="topo">TOPO</header>
+        <nav class="menu">MENU</nav>
+        <main class="principal">PRINCIPAL</main>
+        <aside class="noticiais">NOTCIAIS</aside>
+        <footer class="rodape">RODAPE</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template:"topo topo"
+                          "menu menu"
+                        "conteudo auxiliar"
+                        "rodape rodape" / 1fr 200px;
+            grid-gap:10px;
+
+        }
+        .container >*{
+            background-color: chartreuse;
+            padding: 20px;
+        }
+        header{grid-area: topo;}
+        main{grid-area: conteudo;}
+        nav{grid-area: menu;}
+        footer{grid-area: rodape;}
+        aside{grid-area: auxiliar;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>TOPO</header>
+        <nav>MENU</nav>
+        <aside>FEED</aside>
+        <main>CONTEUDO  PRINCIPAL</main>
+        <footer>RODAPÉ</footer>
+    </div>
+</body>
+</html>

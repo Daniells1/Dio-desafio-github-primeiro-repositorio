@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;       
+           grid-template-columns: [inicio] 700px [fim-conteudo inicio-feed] 150px [fim];
+            grid-template-rows: [inicio] 60px [fim-top inicio-menu] 50px [fim-menu inicio-conteudo] 400px [fim];
+        }
+        .topo{
+            background-color: blueviolet;
+            grid-area:inicio / inicio / fim-top / fim;
+        }
+        .menu{
+            background-color: blue;
+            grid-area:inicio-menu / incio / fim-menu / fim;
+        }
+        .principal{
+            background-color: yellow;
+            grid-area:inicio-conteudo / incio / fim / fim-conteudo;
+        }
+        .feed{
+            background-color: green;
+            grid-area:inicio-conteudo / incio / fim / fim;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="topo">TOPO</header>
+        <nav class="menu">MENU</nav>
+        <main class="principal">CONTEUDO</main>
+        <aside class="feed">FEED DE NOTICIAS</aside>
+
+    </div>
+</body>
+</html>

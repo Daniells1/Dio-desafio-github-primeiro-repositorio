@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{background-color: tomato;border:1px solid #999}
+        .container{
+            display:grid;
+            grid-template-columns: 150px 50px 80px 200px;/*tenho 4 colunas*/
+            grid-template-rows: 150px 70px 120px;/*tenho 3 linhas*/
+            
+        }
+        .box:nth-child(even){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="box">1</div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+   <div class="box">4</div>
+   <div class="box">5</div>
+   <div class="box">6</div>
+   <div class="box">7</div>
+   <div class="box">8</div>
+    </div>
+</body>
+</html>
