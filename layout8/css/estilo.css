@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    font-family: "Helvetica Neue","Helvetica",Arial,sans-serif;
+    height: 100%;
+    margin:0;
+    font-size: 14px;
+}
+.container{
+    background: url('../img/fundo.jpg') no-repeat center fixed;
+    background-size:cover;
+    width: 100%;
+    min-height: 100%;
+}
+.login{
+    color:#aaa;
+    margin: 5rem auto;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 3rem 4rem;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 0.8rem;
+}
+.login h2{
+    font-size: 2rem;
+    color: #FFF;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.login input{
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    background-color: #393939;
+    color:#FFF;
+    margin: 0.5rem 0 1.5rem;
+    padding: 1rem 2.1rem;
+}
+#login,#senha{
+    width: 100%;
+}
+.btn{
+    margin:0.5rem 0 1.5rem;
+    padding: 1rem;
+    border: none;
+    outline:none;
+    color: #FFF;
+    border-radius: 0.3rem;
+
+}
+.btn-danger{
+    background-color: #df0102;
+}
+.auxiliar{
+    display: inline-block;
+}
+.auxiliar label{
+    float:left;
+}
+.auxiliar input[type="checkbox"]{
+    margin:0;
+    padding: 0;
+}
+.auxiliar a {
+    float: right;
+    color: #FFF;
+    text-decoration: none;
+}
+.login footer{
+    margin: 3rem 0 1rem;
+}
+.login footer a{
+    color:#FFF;
+    text-decoration: none;
+}
+.container header{
+    font-size: 3rem;
+    color: #FFF;
+    padding-top: 2rem;
+    padding-left: 4rem;
+
+
+}
+.input-wrapper{
+    position: relative;
+    color:#FFF;
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+}
+.input-login::before{
+    content:"\f007";
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+}
+.input-senha::before{
+    content:"\f084";
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+}

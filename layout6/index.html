@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <style>
+    body{
+        margin: 0;
+        font-family: 'Karla', sans-serif;
+    }
+        header{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 2rem;
+            color: white;
+            background-color: rgb(24, 21, 21);
+        }
+        .banner{
+            display: flex;
+            align-items: center;
+            height: 300px;
+            padding: 20px;
+            color:white;
+            background: url(https://streetviewhub.com/shots/1000x300) center white no-repeat;
+            background-size: cover;
+            text-shadow: 1px 1px 5px black;
+
+
+        }
+        .text-big{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-right: 50px;
+        
+            
+        }
+        .banner .text{
+            max-width: 850px;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .cards{
+            max-width: 900px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px ,1fr ));
+            grid-gap:25px;
+
+        }
+        articles{
+            padding: 5px;
+            box-shadow: 1px 1px 5px #000;
+        }
+        .artigo-img{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="headling">LUGARES PELO MUNDO</h1>
+    </header>
+    <main>
+        <section class="banner">
+            <p class="text-big">SEJA BEM VINDO</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illum amet accusantium necessitatibus placeat illo aperiam molestiae. Adipisci aliquid itaque assumenda impedit deleniti suscipit exercitationem eaque. Sapiente quasi debitis corrupti?</p>
+        </section>
+        <section class="cards">
+            <articles><img src="https://streetviewhub.com/shots/320x250" alt="" class="artigo-img">
+            <h1 class="artigo-titulo">Foto da Imagem</h1>
+            </articles>
+            <articles><img src="https://streetviewhub.com/shots/320x260" alt="" class="artigo-img">
+                <h1 class="artigo-titulo">Foto da Imagem</h1>
+            </articles>
+            <articles><img src="https://streetviewhub.com/shots/320x210" alt="" class="artigo-img">
+                <h1 class="artigo-titulo">Foto da Imagem</h1>
+            </articles>
+            <articles><img src="https://streetviewhub.com/shots/320x220" alt="" class="artigo-img">
+                <h1 class="artigo-titulo">Foto da Imagem</h1>
+            </articles>
+            <articles><img src="https://streetviewhub.com/shots/320x270" alt="" class="artigo-img">
+                <h1 class="artigo-titulo">Foto da Imagem</h1>
+            </articles>
+            <articles><img src="https://streetviewhub.com/shots/320x280" alt="" class="artigo-img">
+                <h1 class="artigo-titulo">Foto da Imagem</h1>
+            </articles>
+        </section>
+    </main>
+</body>
+</html>

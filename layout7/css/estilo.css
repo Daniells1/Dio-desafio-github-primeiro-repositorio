@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Condensed&family=Rubik&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root{
+
+}
+html, body{
+    margin: auto;
+    color: "#369";
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template:
+    " menu menu " 
+    " banner banner " minmax(300px, 40vh)
+    " conteudo divulgacao "
+    " destaque destaque "
+    " rodape rodape " minmax(10vh, 200px) / 1fr 250px;
+    grid-auto-rows: auto;
+
+
+    
+}
+.container > header{
+    grid-area: menu;
+}
+.container > .divulgacao{
+    grid-area: banner;
+}
+.container > main{
+    grid-area: conteudo;
+}
+.container > aside{
+    grid-area: divulgacao;
+}
+.container > .produtos-destaque{
+    grid-area: destaque;
+}
+.container > .rodape{
+    grid-area: rodape;
+}
+.container > header{
+    background-image: linear-gradient(#d64a61, #ef7b49);
+    display: grid;
+    grid-template-columns: 80px 1fr 200px;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+}
+.logo > img{
+height: 75px;
+}
+.menu{
+    margin-left: 1rem;
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu ul li a {
+  
+    text-decoration:none;
+    color: #FFF;
+    padding: 1.5rem;
+    font-size: 1rem;
+    position: relative;
+    transition: all 500ms ease;
+   
+
+}
+
+menu ul li a:hover {
+color:#000;
+background-color: rgba(255, 255,255,0.6);
+}
+.menu ul li a ::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FFF;
+    width: 0;
+    height: 0.2rem;
+    transition: all 1000ms ease;
+    
+}
+.menu ul li a ::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    width: 0;
+    height: 0.2rem;
+    transition: all 1000ms ease;
+    
+}
+.menu ul li a :hover::after,
+.menu ul li a :hover::before{
+width:100%;
+}
+menu ul li a::after:hover {
+    width: 100%;
+}
+#buscaFilmes{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+.divulgacao{
+    background-color: black;
+   background: 
+   url('../imagens/banner2.png') no-repeat bottom left,
+   url('../imagens/banner2.png') no-repeat bottom right,
+   url('../imagens/banner1.jpg') no-repeat center;
+background-size: 10rem,10rem, cover;
+position: relative;
+}
+.divulgacao p{
+    position: absolute;
+    top:50%;
+
+    color: #FFF;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background-color: rgba(0, 0,0,0.6);
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+}
+.principal{
+    margin: 3rem;
+}
+.principal h1{
+    font-size: 4rem;
+    border-bottom: 0.3rem solid #000;
+}
+.filmes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:5px;
+
+}
+.filme{
+    text-align: center;
+}
+.filme img{
+    width: 100%;
+
+}
+.filme a{
+    margin-top: 0.7rem;
+    display: block;
+    background-color: #373830;
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+}
+.produtos-destaque{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.destaque-evento{
+    flex:1;
+    background: url('../imagens/cinema.png') no-repeat center;
+    background-size: cover;
+    margin: 20px;
+    min-height: 15rem;
+    border-radius: 1rem;
+    position: relative;
+
+}
+.destaque-evento h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(255, 255,255,0.6);
+    color:#000;
+    text-align: center;
+    padding: 1rem 0;
+}
+.rodape{
+    background-color: #373830;
+    color: #FFF;
+
+}
+.rodape p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.promocao{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+
+}
+.promocao div{
+    padding: 10px;
+    border-bottom: 0.2rem solid #373830;
+    text-align: justify;
+}
+.input-wrapper{
+    position:relative;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+}
